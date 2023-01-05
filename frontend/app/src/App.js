@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Register from "./Register";
 
 const App = () => {
     const SERVER = "http://127.0.0.1:8000/";
@@ -46,6 +47,7 @@ const App = () => {
                     Title: {prod.desc},desc: {prod.price}
                 </div>
             ))}
+            <Register></Register>
         </div>
     );
 };
